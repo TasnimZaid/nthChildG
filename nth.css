@@ -1,0 +1,191 @@
+.title{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px;
+    font-weight: 800;
+}
+.Ex1{
+    margin: 20px;
+}
+
+.box{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border: 2px solid black;
+    
+    
+
+}
+.box:nth-child(even){
+
+    margin-right: 10px;
+    margin-bottom: 40px;
+    background-color: yellow;
+
+}
+
+.Ex2{
+    padding: 20px;
+    
+}
+.title2{
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 40px;
+    font-weight: 800;
+}
+.box2{
+
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    background-color: red;
+    border: 2px solid black;
+    color: azure;
+    font-size: large;
+    text-align: center;
+    
+
+}
+
+.box2:nth-child(odd){
+    display: none;
+}
+
+
+
+
+
+.Ex3{
+    
+    width: 550px;
+    height: 60;
+    margin-left: 10px;
+    column-count: 3;
+    column-gap: 0px;
+    border-collapse: collapse;
+    
+}
+h3{
+    padding-left: 60px;
+}
+
+table{
+
+    border-spacing: 10px;
+    margin-top: 0px;
+    width: 200px;
+    height: 150px;
+    margin-top: -10px;
+    
+    
+
+    
+}
+tr{
+    margin-left: 0px;
+    border: 2px solid black;
+    background-color: green;
+
+}
+
+td{
+    height: 50px;
+    width: 60px;
+    border: 2px solid black;
+    
+    
+    
+    
+    
+}
+
+
+tr:nth-child(2n){
+    background-color: blue;
+    content: "*";
+    
+    
+}
+
+.Ex4{
+  width: 800px;
+}
+
+.Box{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(171, 164, 205);
+    border: 2px solid black;
+    
+
+}
+
+/*.Box:nth-child(n+6){
+    background-color: orange;
+
+}
+
+.Box:nth-child(-n+5){
+    background-color: orange;
+
+}
+
+.Box:nth-child(4n){
+    background-color: orange;
+
+}
+*/
+.Box:nth-child(n+2){
+    background-color: orange;
+
+}
+
+.ExExtra{
+    margin-left: 20px;
+    width: 450px;
+    counter-reset: counter;
+
+}
+.Multiples{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(196, 201, 196);
+    border: 2px solid black;
+    margin: 3px;
+    
+}
+.Multiples::before{
+   
+    counter-increment: counter;
+  content:  counter(counter) ;
+    
+}
+
+
+
+
+
+.Multiples:hover,
+.Multiples:hover:nth-child(2n+1) {
+  background-color: red;
+}
+
+.Multiples:hover:nth-child(n+2) {
+  background-color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+   
